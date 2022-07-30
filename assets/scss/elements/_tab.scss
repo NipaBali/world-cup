@@ -1,0 +1,77 @@
+/*---------------------
+    Tab Styles  
+-----------------------*/
+.rn-default-tab {
+    // Tab Button 
+    .tab-button {
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        cursor: pointer;
+        border-bottom: none;
+        background: #161616;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        padding: 20px;
+        max-width: 312px;
+        .tabs__tab {
+            margin: 15px;
+            .nav-link {
+                color: #161616;
+                padding: 17px 44px;
+                outline: none;
+                border: 0 none;
+                background: #fff;
+                min-width: 100%;
+                @media #{$lg-layout} {
+                    padding: 24px 24px;
+                }
+                @media #{$md-layout} {
+                    padding: 24px 24px;
+                }
+                @media #{$sm-layout} {
+                    padding: 24px 20px;
+                }
+                &.active {
+                    background: #DD0000;
+                    border-color: transparent;
+                    color: #fff;
+                }
+            }
+        }
+        .rn-tab-button {
+            button {
+                padding: 0;
+                margin: 0;
+                background: transparent;
+                border: 0 none;
+                color: var(--color-white);
+            }
+        }
+    }
+    // Tab Content 
+    .rn-tab-content {
+      
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.style-two {
+        .tab-button {
+            margin-bottom: 30px;
+            .tabs__tab {
+                button {
+                    border-radius: var(--radius-small);
+                }
+            }
+        }
+        .rn-tab-content {
+            border-radius: var(--radius-small);
+        }
+    }
+}
+
